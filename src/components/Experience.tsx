@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-import { Briefcase, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 interface ExperienceProps {
@@ -90,32 +90,46 @@ const Experience = ({ onSetActive }: ExperienceProps) => {
                 className={`flex flex-col md:flex-row gap-8 items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
                 data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}
               >
+                {/* Imagen ocupa el mismo alto que el contenido en desktop */}
                 <div className="w-full md:w-1/2 flex justify-center">
                   <div className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg w-full">
-                    <div className="absolute md:hidden top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 dark:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center">
-                      <Briefcase className="text-white w-5 h-5" />
+                    {/* Cambia el valor de h-16 para ajustar el alto vertical de la imagen en mobile */}
+                    <div className="absolute md:hidden top-0 left-0 w-full h-16 flex items-center justify-center overflow-hidden rounded-t-xl bg-blue-600 dark:bg-blue-500">
+                      <img
+                        src="/profile.jpg"
+                        alt="Profile"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{job.title}</h3>
-                    <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">{job.company} | {job.location}</p>
-                    <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 mb-4">
-                      <Calendar className="w-4 h-4" />
-                      <span>{job.period}</span>
+                    {/* Cambia el valor de pt-16 para que el contenido textual no quede tapado por la imagen */}
+                    <div className="pt-16 md:pt-0">
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{job.title}</h3>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">{job.company} | {job.location}</p>
+                      <div className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 mb-4">
+                        <Calendar className="w-4 h-4" />
+                        <span>{job.period}</span>
+                      </div>
+                      <p className="text-gray-700 dark:text-gray-300 mb-4">{job.description}</p>
+                      <ul className="space-y-2">
+                        {job.responsibilities.map((item, i) => (
+                          <li key={i} className="flex items-start">
+                            <span className="h-5 w-5 text-blue-600 dark:text-blue-400 mr-2">•</span>
+                            <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 mb-4">{job.description}</p>
-                    <ul className="space-y-2">
-                      {job.responsibilities.map((item, i) => (
-                        <li key={i} className="flex items-start">
-                          <span className="h-5 w-5 text-blue-600 dark:text-blue-400 mr-2">•</span>
-                          <span className="text-gray-700 dark:text-gray-300">{item}</span>
-                        </li>
-                      ))}
-                    </ul>
                   </div>
                 </div>
-                
-                <div className="hidden md:flex w-1/2 justify-center">
-                  <div className="bg-blue-600 dark:bg-blue-500 w-14 h-14 rounded-full flex items-center justify-center shadow-lg z-10">
-                    <Briefcase className="text-white w-7 h-7" />
+                <div className="hidden md:flex w-1/2 justify-center items-stretch">
+                  <div className="w-full h-full flex items-stretch">
+                    {/* Cambia el valor de maxHeight para ajustar el alto vertical de la imagen en desktop */}
+                    <img
+                      src="img/foto-p.png"
+                      alt="Profile"
+                      className="w-full h-full object-cover rounded-xl shadow-lg"
+                      style={{ minHeight: 0, minWidth: 0, maxHeight: '340px' }}
+                    />
                   </div>
                 </div>
               </div>

@@ -78,7 +78,9 @@ const Skills = ({ onSetActive }: SkillsProps) => {
             { name: "VS Code", proficiency: 80 },
             { name: "Tailwind CSS", proficiency: 65 },
             { name: "Bootstrap", proficiency: 70 },
-            { name: "Postman", proficiency: 70 }
+            { name: "Postman", proficiency: 70 },
+            { name: "Inglés", proficiency: 75 },
+            { name: "Ruso", proficiency: 100 }
           ]
         }
       ]
@@ -135,7 +137,9 @@ const Skills = ({ onSetActive }: SkillsProps) => {
             { name: "VS Code", proficiency: 80 },
             { name: "Tailwind CSS", proficiency: 65 },
             { name: "Bootstrap", proficiency: 70 },
-            { name: "Postman", proficiency: 70 }
+            { name: "Postman", proficiency: 70 },
+            { name: "English", proficiency: 75 },
+            { name: "Russian", proficiency: 100 }
           ]
         }
       ];

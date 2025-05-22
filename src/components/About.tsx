@@ -30,10 +30,10 @@ const About = ({ onSetActive }: AboutProps) => {
       : '',
     intro1: language === 'es'
       ? ' Soy un apasionado del desarrollo y diseño web tanto en front-end como en back-end. He dedicado muchas horas a aprender y perfeccionar mis habilidades en la creación de experiencias digitales atractivas y funcionales. Mi enfoque combina la experiencia técnica con la resolución creativa de problemas para ofrecer soluciones que no solo se ven bien, sino que también brindan experiencias excepcionales al usuario.'
-      : 'I am a passionate web developer and disagner with a focus on both front-end and back-end. I have dedicated countless hours to learning and honing my skills in creating engaging and functional digital experiences. My approach combines technical expertise with creative problem-solving to deliver solutions that not only look good but also provide exceptional user experiences.',
+      : 'I am a passionate web developer and designer with a focus on both front-end and back-end. I have dedicated many hours to learning and improve my skills in creating engaging and functional digital experiences. My approach combines technical expertise with creative problem-solving to deliver solutions that not only look good but also provide exceptional user experiences.',
     intro2: language === 'es'
       ? 'Tengo un marcado enfoque en código limpio, diseño responsivo y optimización de rendimiento, busco construir sitios y aplicaciones que destaquen en el competitivo entorno digital actual no solo por su diseño atractivo sino por su faciliad de cara al usuario. Creo en el aprendizaje continuo y en mantenerme actualizado con las últimas tecnologías y tendencias de diseño y desarrollo web.'
-      : "I have a strong focus on clean code, responsive design, and performance optimization. I strive to build websites and applications that stand out in today's competitive digital landscape not only for their attractive design but also for their user-friendliness. I believe in continuous learning and staying updated with the latest technologies and trends in web design and development.",
+      : "I have a strong focus on clean code, responsive design, and performance optimization. I try to build websites and applications that stand out in today's competitive digital landscape not only for their attractive design but also for their user-friendliness. I believe in continuous learning and staying updated with the latest technologies and trends in web design and development.",
     name: language === 'es' ? 'Nombre:' : 'Name:',
     role: language === 'es' ? 'Rol:' : 'Role:',
     roleValue: language === 'es'
@@ -69,7 +69,7 @@ const About = ({ onSetActive }: AboutProps) => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-blue-600 dark:border-blue-500 rounded-xl"></div>
               <img 
-                src="https://images.pexels.com/photos/1181304/pexels-photo-1181304.jpeg" 
+                src="img/foto-m.jpeg" 
                 alt="About me" 
                 className="rounded-xl shadow-xl w-full h-auto relative z-10"
               />

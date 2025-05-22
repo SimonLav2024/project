@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState } from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
-import { ExternalLink, Github } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
 interface ProjectsProps {
@@ -12,7 +12,6 @@ interface Project {
   description: string;
   image: string;
   tags: string[];
-  liveUrl: string;
   repoUrl: string;
 }
 
@@ -38,102 +37,34 @@ const Projects = ({ onSetActive }: ProjectsProps) => {
   const projects: Project[] = language === 'es'
     ? [
         {
-          title: "Sitio E-commerce",
-          description: "Plataforma e-commerce totalmente responsiva con filtrado de productos, carrito y proceso de compra seguro.",
-          image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg",
-          tags: ["React", "Node.js", "MongoDB", "Frontend", "Backend"],
-          liveUrl: "#",
-          repoUrl: "#"
+          title: "Talleres Moyano (E-commerce)",
+          description: "Página web diseñada para un posible taller de vehiculos con una plataforma e-commerce integrada totalmente responsiva con filtrado de productos, carrito, etc.",
+          image: "https://images.pexels.com/photos/4480505/pexels-photo-4480505.jpeg",
+          tags: ["PHP", "JavaScript", "HTML/CSS", "MySQL", "API", "Frontend", "Backend"],
+          repoUrl: "https://github.com/SimonLav2024/taller"
         },
         {
-          title: "Sitio de Portafolio",
-          description: "Portafolio moderno con animaciones suaves y modo claro/oscuro, construido con React y Tailwind CSS.",
-          image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg",
-          tags: ["React", "Tailwind CSS", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
-        },
-        {
-          title: "App de Gestión de Tareas",
-          description: "Aplicación de gestión de tareas con drag-and-drop, autenticación de usuarios y visualización de datos.",
-          image: "https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg",
-          tags: ["Vue.js", "Firebase", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
-        },
-        {
-          title: "Dashboard de Redes Sociales",
-          description: "Dashboard interactivo con analíticas de redes sociales, datos en tiempo real y widgets personalizables.",
-          image: "https://images.pexels.com/photos/3194518/pexels-photo-3194518.jpeg",
-          tags: ["React", "D3.js", "API", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
-        },
-        {
-          title: "Sistema de Reservas de Restaurante",
-          description: "Sistema integral para reservas de mesas con panel de administrador y notificaciones para clientes.",
-          image: "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg",
-          tags: ["PHP", "MySQL", "Backend", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
-        },
-        {
-          title: "App de Pronóstico del Clima",
-          description: "Aplicación de clima con pronósticos detallados por geolocalización y mapas meteorológicos interactivos.",
-          image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg",
-          tags: ["JavaScript", "API", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
+          title: "Portfolio Personal",
+          description: "Un portafolio personal para mostrar mis proyectos y habilidades.",
+          image: "img/portf.png",
+          tags: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Frontend", "Tailwind CSS"],
+          repoUrl: "https://github.com/SimonLav2024/project"
         }
       ]
     : [
         {
-          title: "E-commerce Website",
-          description: "A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout process.",
-          image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg",
-          tags: ["React", "Node.js", "MongoDB", "Frontend", "Backend"],
-          liveUrl: "#",
-          repoUrl: "#"
+          title: "Talleres Moyano (E-commerce)",
+          description: "Website designed for a potential vehicle workshop with an integrated e-commerce platform, fully responsive with product filtering, cart and more.",
+          image: "https://images.pexels.com/photos/4480505/pexels-photo-4480505.jpeg",
+          tags: ["PHP", "JavaScript", "HTML/CSS", "MySQL", "API", "Frontend", "Backend"],
+          repoUrl: "https://github.com/SimonLav2024/taller"
         },
         {
-          title: "Portfolio Website",
-          description: "A modern portfolio website with smooth animations and a dark/light mode toggle built with React and Tailwind CSS.",
-          image: "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg",
-          tags: ["React", "Tailwind CSS", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
-        },
-        {
-          title: "Task Management App",
-          description: "A feature-rich task management application with drag-and-drop functionality, user authentication, and data visualization.",
-          image: "https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg",
-          tags: ["Vue.js", "Firebase", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
-        },
-        {
-          title: "Social Media Dashboard",
-          description: "An interactive dashboard displaying social media analytics with real-time data updates and customizable widgets.",
-          image: "https://images.pexels.com/photos/3194518/pexels-photo-3194518.jpeg",
-          tags: ["React", "D3.js", "API", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
-        },
-        {
-          title: "Restaurant Booking System",
-          description: "A comprehensive system for restaurant table reservations with administrator panel and customer notification features.",
-          image: "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg",
-          tags: ["PHP", "MySQL", "Backend", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
-        },
-        {
-          title: "Weather Forecast App",
-          description: "A sleek weather application providing detailed forecasts based on geolocation data and interactive weather maps.",
-          image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg",
-          tags: ["JavaScript", "API", "Frontend"],
-          liveUrl: "#",
-          repoUrl: "#"
+          title: "Personal Portfolio",
+          description: "A personal portfolio to showcase my projects and skills.",
+          image: "img/portf.png",
+          tags: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Frontend", "Tailwind CSS"],
+          repoUrl: "https://github.com/SimonLav2024/project"
         }
       ];
 
@@ -214,15 +145,6 @@ const Projects = ({ onSetActive }: ProjectsProps) => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-6">
                   <div className="flex space-x-4">
-                    <a 
-                      href={project.liveUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="p-3 bg-white rounded-full text-gray-900 hover:bg-blue-600 hover:text-white transition-colors"
-                      aria-label="View live site"
-                    >
-                      <ExternalLink className="w-5 h-5" />
-                    </a>
                     <a 
                       href={project.repoUrl} 
                       target="_blank" 

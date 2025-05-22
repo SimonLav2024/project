@@ -41,6 +41,13 @@ const Education = ({ onSetActive }: EducationProps) => {
   const education: EducationItem[] = language === 'es'
     ? [
         {
+          degree: "Desarrollo de Aplicaciones con Tecnologías Web",
+          institution: "Atlántida Formación",
+          location: "Granada, España",
+          period: " 580 horas | 2024",
+          description: "Certificado de Profesionalidad"
+        },
+        {
           degree: "Grado en Ciencias Políticas y de la Administración",
           institution: "Universidad de Granada",
           location: "Granada, España",
@@ -50,10 +57,17 @@ const Education = ({ onSetActive }: EducationProps) => {
       ]
     : [
         {
+          degree: "Web Application Development with Web Technologies",
+          institution: "Atlántida Formación",
+          location: "Granada, Spain",
+          period: "580 hours | 2024",
+          description: "Professional Certificate"
+        },
+        {
           degree: "Bachelor's Degree in Political Science and Public Administration",
           institution: "University of Granada",
           location: "Granada, Spain",
-          period: "2014 - 2019",
+          period: "2020",
           description: ""
         }
       ];
@@ -61,41 +75,41 @@ const Education = ({ onSetActive }: EducationProps) => {
   const certifications: CertificationItem[] = language === 'es'
     ? [
         {
-          name: "Desarrollo Web Full Stack",
-          issuer: "Atlántida Formación",
-          date: "Junio 2024"
+          name: "Prácticas de Desarrollo de Bases de Datos",
+          issuer: "CyberCordoba",
+          date: "80 horas | Febrero 2025"
         },
         {
-          name: "Programación con lenguaje de guiones",
+          name: "Programación con lenguajes de Guión de Páginas Web",
           issuer: "Vertice Training",
-          date: "Abril 2025",
+          date: "60 horas | Abril 2025",
         },
         {
           name: "Pruebas de Funcionalidades y Optimización de Páginas Web",
           issuer: "Vertice Training",
-          date: "Mayo 2025",
+          date: "60 horas | Mayo 2025",
         }
       ]
     : [
         {
-          name: "Full Stack Web Development",
-          issuer: "Atlántida Formación",
-          date: "June 2024"
+          name: "Database Development Practices",
+          issuer: "CyberCordoba",
+          date: "80 hours | February 2025"
         },
         {
-          name: "Scripting Language Programming",
+          name: "Programming with Web Page Scripting Languages",
           issuer: "Vertice Training",
-          date: "April 2025",
+          date: "60 hours | April 2025",
         },
         {
           name: "Web Functionality Testing and Optimization",
           issuer: "Vertice Training",
-          date: "May 2025",
+          date: "60 hours | May 2025",
         }
       ];
 
   const educationTitle = language === 'es' ? 'Educación' : 'Education';
-  const certificationsTitle = language === 'es' ? 'Certificaciones' : 'Certifications';
+  const certificationsTitle = language === 'es' ? 'Formacion Complementaria' : 'Additional Training';
   
 
   return (

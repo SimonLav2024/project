@@ -102,7 +102,7 @@ const Hero = ({ onSetActive }: HeroProps) => {
                 href="#contact" 
                 className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg font-medium transition-transform hover:scale-105 w-full sm:w-auto text-center"
               >
-                {language === 'es' ? 'Contáctame' : 'Hire Me'}
+                {language === 'es' ? 'Contáctame' : 'Contact Me'}
               </a>
               <a 
                 href="#projects" 
@@ -114,13 +114,13 @@ const Hero = ({ onSetActive }: HeroProps) => {
           </div>
           
           <div className="w-full md:w-2/5 flex justify-center md:justify-end" data-aos="fade-left">
-            <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
+            <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 flex items-center justify-center mx-auto">
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-500 animate-rotate-slow"></div>
               <div className="absolute inset-1.5 rounded-full bg-white dark:bg-gray-900 flex items-center justify-center">
                 <img 
-                  src="img/rk.jpg" 
+                  src="img/yo.png" 
                   alt="Developer profile" 
-                  className="rounded-full w-full h-full object-cover"
+                  className="rounded-full w-full h-full object-cover object-center mx-auto"
                 />
               </div>
             </div>
