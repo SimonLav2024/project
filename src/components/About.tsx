@@ -43,7 +43,7 @@ const About = ({ onSetActive }: AboutProps) => {
     experienceValue: language === 'es' ? '1 año' : '1 Year',
     freelance: language === 'es' ? 'Autónomo (Independiente)' : 'Freelance',
     location: language === 'es' ? 'Ubicación:' : 'Location:',
-    locationValue: language === 'es' ? 'Granada y Córdoba, España' : 'Granada and Córdoba, Spain',
+    locationValue: language === 'es' ? 'Granada, España' : 'Granada, Spain',
     contact: language === 'es' ? 'Contáctame' : 'Contact Me',
     intro: language === 'es'
       ? 'Conoce más sobre mí, mi trayectoria y qué impulsa mi pasión por crear experiencias digitales.'

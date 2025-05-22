@@ -38,7 +38,7 @@ const Experience = ({ onSetActive }: ExperienceProps) => {
         {
           title: "Desarrollador Junior",
           company: "Autónomo (Independiente)",
-          location: "Granada y Córdoba, España",
+          location: "Granada, España",
           period: "Feb 2024 - Presente",
           description: "Desarrollo de proyectos web y aplicaciones para mi mismo y clientes locales.",
           responsibilities: [
@@ -53,7 +53,7 @@ const Experience = ({ onSetActive }: ExperienceProps) => {
         {
           title: "Junior Developer",
           company: "Freelance",
-          location: "Granada and Córdoba, Spain",
+          location: "Granada, Spain",
           period: "Feb 2024 - Present",
           description: "Developing web projects and applications for myself and local clients.",
           responsibilities: [
