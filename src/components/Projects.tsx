@@ -44,7 +44,7 @@ const Projects = ({ onSetActive }: ProjectsProps) => {
         {
           title: "Portfolio Personal",
           description: "Un portafolio personal para mostrar mis proyectos y habilidades.",
-          image: "img/portf.png",
+          image: "/img/portf.png",
           tags: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Frontend", "Tailwind CSS"],
           repoUrl: "https://github.com/SimonLav2024/project"
         }
@@ -60,7 +60,7 @@ const Projects = ({ onSetActive }: ProjectsProps) => {
         {
           title: "Personal Portfolio",
           description: "A personal portfolio to showcase my projects and skills.",
-          image: "../img/portf.png",
+          image: "/img/portf.png",
           tags: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Frontend", "Tailwind CSS"],
           repoUrl: "https://github.com/SimonLav2024/project"
         }

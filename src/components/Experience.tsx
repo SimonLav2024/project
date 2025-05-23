@@ -92,7 +92,7 @@ const Experience = ({ onSetActive }: ExperienceProps) => {
                   <div className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg w-full">
                     <div className="absolute md:hidden top-0 left-0 w-full h-16 flex items-center justify-center overflow-hidden rounded-t-xl bg-blue-600 dark:bg-blue-500">
                       <img
-                        src="img/foto-p.png"
+                        src="/img/foto-p.png"
                         alt="Profile"
                         className="w-full h-full object-cover"
                       />
@@ -119,7 +119,7 @@ const Experience = ({ onSetActive }: ExperienceProps) => {
                 <div className="hidden md:flex w-1/2 justify-center items-stretch">
                   <div className="w-full h-full flex items-stretch">
                     <img
-                      src="img/foto-p.png"
+                      src="/img/foto-p.png"
                       alt="Profile"
                       className="w-full h-full object-cover rounded-xl shadow-lg"
                       style={{ minHeight: 0, minWidth: 0, maxHeight: '340px' }}

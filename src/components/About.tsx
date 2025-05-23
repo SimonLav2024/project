@@ -68,7 +68,7 @@ const About = ({ onSetActive }: AboutProps) => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-blue-600 dark:border-blue-500 rounded-xl"></div>
               <img 
-                src="img/foto-m.jpeg" 
+                src="/img/foto-m.jpeg" 
                 alt="About me" 
                 className="rounded-xl shadow-xl w-full h-auto relative z-10"
               />
