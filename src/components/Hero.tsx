@@ -117,7 +117,7 @@ const Hero = ({ onSetActive }: HeroProps) => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-600 to-cyan-500 animate-rotate-slow"></div>
               <div className="absolute inset-1.5 rounded-full bg-white dark:bg-gray-900 flex items-center justify-center">
                 <img 
-                  src="/img/yo.png" 
+                  src="public/img/yo.png" 
                   alt="Developer profile" 
                   className="rounded-full w-full h-full object-cover object-center mx-auto"
                 />
