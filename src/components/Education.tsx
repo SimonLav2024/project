@@ -50,7 +50,7 @@ const Education = ({ onSetActive }: EducationProps) => {
           degree: "Grado en Ciencias Políticas y de la Administración",
           institution: "Universidad de Granada",
           location: "Granada, España",
-          period: "2014 - 2019",
+          period: "2020",
           description: ""
         }
       ]
