@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowDown } from 'lucide-react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -124,18 +123,6 @@ const Hero = ({ onSetActive }: HeroProps) => {
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <a 
-            href="#about" 
-            className="flex flex-col items-center text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            <span className="text-sm mb-1">
-              {language === 'es' ? 'Desplazar hacia abajo' : 'Scroll Down'}
-            </span>
-            <ArrowDown className="h-5 w-5" />
-          </a>
         </div>
       </div>
     </div>
