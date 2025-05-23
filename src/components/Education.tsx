@@ -87,6 +87,11 @@ const Education = ({ onSetActive }: EducationProps) => {
           name: "Pruebas de Funcionalidades y Optimización de Páginas Web",
           issuer: "Vertice Training",
           date: "60 horas | Mayo 2025",
+        },
+        {
+          name: "Publicación de Páginas Web",
+          issuer: "Vertice Training",
+          date: "60 horas | Actualmente en curso"
         }
       ]
     : [
@@ -104,6 +109,11 @@ const Education = ({ onSetActive }: EducationProps) => {
           name: "Web Functionality Testing and Optimization",
           issuer: "Vertice Training",
           date: "60 hours | May 2025",
+        },
+        {
+          name: "Web Page Publishing",
+          issuer: "Vertice Training",
+          date: "60 hours | Currently in progress"
         }
       ];
 
