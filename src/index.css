@@ -30,14 +30,12 @@
   }
 }
 
-/* Ensure the root div covers full height */
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -55,7 +53,6 @@
   background: #555;
 }
 
-/* Dark mode scrollbar */
 .dark ::-webkit-scrollbar-track {
   background: #1f2937;
 }

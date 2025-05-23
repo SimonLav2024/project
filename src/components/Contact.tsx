@@ -22,7 +22,6 @@ const Contact = ({ onSetActive }: ContactProps) => {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const { language } = useLanguage();
 
-  // Textos en ambos idiomas
   const texts = {
     sectionTitle: language === 'es' ? 'Contacto' : 'Get In Touch',
     sectionDesc: language === 'es'

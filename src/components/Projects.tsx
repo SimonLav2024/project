@@ -27,13 +27,11 @@ const Projects = ({ onSetActive }: ProjectsProps) => {
     }
   }, [isInView, onSetActive]);
 
-  // Textos en ambos idiomas
   const sectionTitle = language === 'es' ? 'Mis Proyectos' : 'My Projects';
   const sectionDesc = language === 'es'
     ? 'Explora algunos de mis trabajos y proyectos recientes que muestran mis habilidades y experiencia.'
     : 'Explore some of my recent work and projects that showcase my skills and expertise.';
 
-  // Proyectos en ambos idiomas
   const projects: Project[] = language === 'es'
     ? [
         {
@@ -68,7 +66,6 @@ const Projects = ({ onSetActive }: ProjectsProps) => {
         }
       ];
 
-  // Filtros traducidos
   const tagTranslations: Record<string, string> = {
     "Frontend": language === 'es' ? "Frontend" : "Frontend",
     "Backend": language === 'es' ? "Backend" : "Backend",

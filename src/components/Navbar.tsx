@@ -61,7 +61,6 @@ const Navbar = ({ activeSection, language = 'es', toggleLanguage = () => {} }: N
           onClick={closeMenu}
         ></a>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <ul className="flex space-x-6">
             {navLinks.map(link => (
@@ -81,7 +80,6 @@ const Navbar = ({ activeSection, language = 'es', toggleLanguage = () => {} }: N
           </ul>
           
           <div className="flex items-center space-x-4">
-            {/* Theme switch */}
             <button 
               onClick={toggleTheme} 
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
@@ -93,7 +91,6 @@ const Navbar = ({ activeSection, language = 'es', toggleLanguage = () => {} }: N
                 <Moon className="h-5 w-5 text-gray-700" />
               )}
             </button>
-            {/* Language switch */}
             <button
               onClick={toggleLanguage}
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
@@ -121,10 +118,7 @@ const Navbar = ({ activeSection, language = 'es', toggleLanguage = () => {} }: N
             </a>
           </div>
         </nav>
-
-        {/* Mobile Navigation Toggle */}
         <div className="flex items-center space-x-4 md:hidden">
-          {/* Theme switch */}
           <button 
             onClick={toggleTheme} 
             className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
@@ -136,7 +130,6 @@ const Navbar = ({ activeSection, language = 'es', toggleLanguage = () => {} }: N
               <Moon className="h-5 w-5 text-gray-700" />
             )}
           </button>
-          {/* Language switch */}
           <button
             onClick={toggleLanguage}
             className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
@@ -167,7 +160,6 @@ const Navbar = ({ activeSection, language = 'es', toggleLanguage = () => {} }: N
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-white dark:bg-gray-900 shadow-lg border-t border-gray-200 dark:border-gray-800 animate-fadeDown">
           <nav className="container mx-auto px-6 py-6">

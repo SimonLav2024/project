@@ -27,7 +27,6 @@ const Experience = ({ onSetActive }: ExperienceProps) => {
     }
   }, [isInView, onSetActive]);
 
-  // Textos en ambos idiomas
   const sectionTitle = language === 'es' ? 'Experiencia Profesional' : 'Professional Experience';
   const sectionDesc = language === 'es'
     ? 'Un resumen cronológico de mi trayectoria profesional y logros en mi carrera.'
@@ -80,7 +79,6 @@ const Experience = ({ onSetActive }: ExperienceProps) => {
         </div>
 
         <div className="relative">
-          {/* Timeline Line */}
           <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200 dark:bg-blue-900"></div>
           
           <div className="space-y-12">
@@ -90,18 +88,15 @@ const Experience = ({ onSetActive }: ExperienceProps) => {
                 className={`flex flex-col md:flex-row gap-8 items-center ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
                 data-aos={index % 2 === 0 ? 'fade-left' : 'fade-right'}
               >
-                {/* Imagen ocupa el mismo alto que el contenido en desktop */}
                 <div className="w-full md:w-1/2 flex justify-center">
                   <div className="relative bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg w-full">
-                    {/* Cambia el valor de h-16 para ajustar el alto vertical de la imagen en mobile */}
                     <div className="absolute md:hidden top-0 left-0 w-full h-16 flex items-center justify-center overflow-hidden rounded-t-xl bg-blue-600 dark:bg-blue-500">
                       <img
-                        src="/profile.jpg"
+                        src="img/foto-p.png"
                         alt="Profile"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    {/* Cambia el valor de pt-16 para que el contenido textual no quede tapado por la imagen */}
                     <div className="pt-16 md:pt-0">
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{job.title}</h3>
                       <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">{job.company} | {job.location}</p>
@@ -123,7 +118,6 @@ const Experience = ({ onSetActive }: ExperienceProps) => {
                 </div>
                 <div className="hidden md:flex w-1/2 justify-center items-stretch">
                   <div className="w-full h-full flex items-stretch">
-                    {/* Cambia el valor de maxHeight para ajustar el alto vertical de la imagen en desktop */}
                     <img
                       src="img/foto-p.png"
                       alt="Profile"

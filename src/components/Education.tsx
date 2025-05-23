@@ -32,7 +32,6 @@ const Education = ({ onSetActive }: EducationProps) => {
     }
   }, [isInView, onSetActive]);
 
-  // Textos en ambos idiomas
   const sectionTitle = language === 'es' ? 'Educación y Certificaciones' : 'Education & Certifications';
   const sectionDesc = language === 'es'
     ? 'Mi formación académica y certificaciones profesionales que han forjado mi experiencia.'

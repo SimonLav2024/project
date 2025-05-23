@@ -19,7 +19,6 @@ const About = ({ onSetActive }: AboutProps) => {
 
   const { language } = useLanguage();
 
-  // Textos en ambos idiomas
   const texts = {
     title: language === 'es' ? 'Sobre mí' : 'About Me',
     subtitle: language === 'es'
