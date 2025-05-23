@@ -108,7 +108,7 @@ const Navbar = ({ activeSection, language = 'es', toggleLanguage = () => {} }: N
             </button>
             
             <a 
-              href="cv/Curriculum_Simon_WD.pdf" 
+              href="/cv/Curriculum_Simon_WD.pdf" 
               className="flex items-center space-x-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors text-sm font-medium"
               target="_blank"
               rel="noopener noreferrer"
@@ -181,7 +181,7 @@ const Navbar = ({ activeSection, language = 'es', toggleLanguage = () => {} }: N
               ))}
               <li className="pt-2">
                 <a 
-                  href="/resume.pdf" 
+                  href="/cv/Curriculum_Simon_WD.pdf" 
                   className="flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-md transition-colors text-base font-medium w-full"
                   target="_blank"
                   rel="noopener noreferrer"
