@@ -37,7 +37,7 @@ const Contact = ({ onSetActive }: ContactProps) => {
       ? 'Actualmente disponible para trabajo freelance y abierto a nuevas oportunidades laborales.'
       : "I'm currently available for freelance work and open to discussing new job opportunities.",
     workingDays: language === 'es' ? 'Contactame' : 'Contact me',
-    workingHours: language === 'es' ? 'Horario' : 'Working hours',
+    workingHours: language === 'es' ? 'Horario' : 'Availability',
     daysValue: language === 'es' ? 'Lunes - Viernes' : 'Monday - Friday',
     hoursValue: language === 'es' ? '8:00 - 19:00' : '8:00 AM - 7:00 PM',
     formTitle: language === 'es' ? 'Envíame un mensaje' : 'Send Me a Message',
