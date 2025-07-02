@@ -91,7 +91,7 @@ const Education = ({ onSetActive }: EducationProps) => {
         {
           name: "Publicación de Páginas Web",
           issuer: "Vertice Training",
-          date: "60 horas | Actualmente en curso"
+          date: "60 horas | Mayo 2025"
         }
       ]
     : [
@@ -113,7 +113,7 @@ const Education = ({ onSetActive }: EducationProps) => {
         {
           name: "Web Page Publishing",
           issuer: "Vertice Training",
-          date: "60 hours | Currently in progress"
+          date: "60 hours | May 2025"
         }
       ];
 
