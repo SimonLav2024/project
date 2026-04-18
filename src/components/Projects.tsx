@@ -47,6 +47,13 @@ const Projects = ({ onSetActive }: ProjectsProps) => {
           image: "/img/portf.png",
           tags: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Frontend", "Tailwind CSS"],
           repoUrl: "https://github.com/SimonLav2024/project"
+        },
+        {
+          title: "Registro de horarios de trabajo",
+          description: "Una aplicación web para registrar y gestionar los horarios de trabajo de los empleados, con funcionalidades de inicio de sesión, registro de horas y generación de informes.",
+          image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg",
+          tags: ["HTML/CSS", "JavaScript",  "PostgreSQL", "Frontend", "Backend"],
+          repoUrl: "https://github.com/SimonLav2024/Registro-de-trabajo"
         }
       ]
     : [
@@ -63,6 +70,13 @@ const Projects = ({ onSetActive }: ProjectsProps) => {
           image: "/img/portf.png",
           tags: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Frontend", "Tailwind CSS"],
           repoUrl: "https://github.com/SimonLav2024/project"
+        },
+        {
+          title: "Work Hours Tracker",
+          description: "A web application to track and manage employee work hours, with features for login, hour registration, and report generation.",
+          image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg",
+          tags: ["HTML/CSS", "JavaScript",  "PostgreSQL", "Frontend", "Backend"],
+          repoUrl: "https://github.com/SimonLav2024/Registro-de-trabajo"
         }
       ];
 
